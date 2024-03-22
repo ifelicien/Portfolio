@@ -1,112 +1,280 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
 }
 
-body{
-    min-height: 100vh;
-    background-image: url(./assets/christopher-gower-m_HRfLhgABo-unsplash.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+body {
+  min-height: 100vh;
+  height: auto;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-nav{
-    background-color: white;
-    box-shadow: 3px 3px 5px #000000;
+nav {
+  background-color: white;
+  box-shadow: 3px 3px 5px #000000;
+  position: sticky;
+  top: 0;
 }
 
-nav ul{
-    width: 100%;
-    list-style: none;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+nav ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 nav li {
-    height: 50px;
+  height: 50px;
 }
 
-nav a{
-    height: 100%;
-    padding: 0 30px;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    color: #000000;
+nav a {
+  height: 100%;
+  padding: 0 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: #000000;
 }
 
-nav a:hover{
-    background-color: #f0f0f0;
+nav a:hover {
+  background-color: #f0f0f0;
 }
 
-nav li:first-child{
-    margin-right: auto;
+nav li:first-child {
+  margin-right: auto;
 }
 
 #logo {
-    height: 100%;
-    padding: 0 30px;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    color: #000000;
+  height: 100%;
+  padding: 0 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: #000000;
 }
 
-.sidebar{
-    position: fixed;
-    top: 0;
-    right: 0;
-    height: 100vh;
-    width: 250px;
-    z-index: 999;
-    background-color: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(10px);
-    box-shadow: -10 0 10 #000000;
-    display: none;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  box-shadow: -10 0 10 #000000;
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 
 .sidebar li {
-    width: 100%;
+  width: 100%;
 }
-.sidebar a{
-    width: 100%;
+.sidebar a {
+  width: 100%;
 }
 
-.menu-button{
-    display: none;
+.menu-button {
+  display: none;
 }
 
 .hero {
-    color: #f0f0f0;
-    text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  width: 100%;
+  box-sizing: border-box;
+  padding-top: 50px;
+  background: url(./assets/christopher-gower-m_HRfLhgABo-unsplash.jpg) no-repeat
+    center;
+  background-size: cover;
+  margin-bottom: 3%;
+}
+
+#headerContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #f0f0f0;
+  text-shadow: 3px 3px 5px #000000;
 }
 
 .hero h1 {
-    text-shadow: 3px 3px 5px #000000;
+  font-size: 5em;
 }
 
-.hero h2{
-    text-shadow: 3px 3px 5px #000000;
+.hero h2 {
+  font-size: 3.09em;
 }
 
-@media(max-width: 800px){
-    .hideOnMobile{
-        display:none;
-    }
-    .menu-button{
-        display: block;
-    }
+#aboutMe {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 99vw;
+  box-sizing: border-box;
+  background: #4e4e4e29;
+  padding-top: 70px;
 }
 
-@media(min-width: 400px){
-    .sidebar{
-        width: 100%;
-    }
+#about-content {
+  padding-top: 2%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
+
+#aboutMe img {
+  padding-left: 20%;
+  padding-top: 4%;
+}
+
+#aboutMe h4 {
+  padding-left: 4%;
+  padding-top: 4%;
+  margin-bottom: 4%;
+  font-size: 2.5em;
+}
+
+#aboutMe p {
+  padding-left: 7%;
+  padding-right: 23%;
+  padding-bottom: 2%;
+  font-size: 1.2em;
+}
+
+#aboutMe h3 {
+  font-size: 1.8em;
+}
+
+#education {
+  display: flex;
+  flex-direction: row;
+  height: 90vh;
+  width: 99vw;
+  box-sizing: border-box;
+  padding-top: 70px;
+  background: hsla(0, 0%, 100%, 0.117);
+}
+
+#columnLeft,
+#columnRight {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#columnLeft {
+  display: flex;
+  justify-content: center;
+  padding-left: 23%;
+  padding-right: 2%;
+  background: #80000019;
+}
+
+#columnLeft h3 {
+  font-size: 1.8em;
+  padding-bottom: 30px;
+}
+
+#columnLeft p {
+  font-size: 1.3em;
+}
+
+#columnRight {
+  display: flex;
+  justify-content: center;
+  margin-right: 5%;
+  padding-right: 3%;
+  padding-left: 2%;
+}
+
+#columnRight img {
+  max-width: 100%;
+  height: auto;
+}
+
+#columnRight ul {
+  display: flex;
+  list-style: none;
+  width: 100%;
+}
+
+#columnRight li {
+    font-size: 1vw;
+    padding-left: 10px;
+    margin-right: 10px;
+}
+
+#projects {
+  display: flex;
+  flex-direction: column;
+  width: 99vw;
+  height: 90vh;
+  box-sizing: border-box;
+  background: #4e4e4e29;
+  margin: auto;
+  padding-top: 70px;
+}
+
+#proj {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+
+#project1,
+#project2,
+#project3 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 2%;
+  padding: 60px 5px;
+}
+
+#project1 h4,
+#project1 h5,
+#project2 h4,
+#project2 h5,
+#project3 h4,
+#project3 h5 {
+  margin-top: auto;
+  font-size: 0.7vw;
+}
+
+#contact {
+  display: flex;
+  flex-direction: row;
+  height: 90vh;
+  width: calc(100% - 2 * 30px);
+  padding-top: 70px;
+}
+
+@media (max-width: 800px) {
+  .hideOnMobile {
+    display: none;
+  }
+  .menu-button {
+    display: block;
+  }
+}
+
+@media (min-width: 400px) {
+  .sidebar {
+    width: 100%;
+  }
+}
+
+
+
 

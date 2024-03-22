@@ -1,0 +1,179 @@
+@media (max-width: 400px) {
+    .hero, #aboutMe,
+    #education, #projects,
+    #contact{
+        width: 100%;
+        /* margin: 0; */
+        flex-direction: column; /* Stack elements vertically */
+    }
+
+    .hero h1,
+    #aboutMe h4 {
+        font-size: 3em; /* Smaller font size */
+        padding: 0 20px; /* Add padding to prevent text from touching the edges */
+        text-align: center; /* Center the text */
+    }
+
+    .hero h2,
+    #aboutMe p,
+    #aboutMe h3 {
+        font-size: 2em; /* Smaller font size */
+        padding: 0 20px; /* Add padding to prevent text from touching the edges */
+        text-align: center; /* Center the text */
+    }
+
+    .hero,
+    #about-content {
+        background-position: top center;
+        background-size: auto;
+    }
+
+    #aboutMe img {
+        width: 70%; /* Adjust image size */
+        margin-bottom: 2%; /* Add space below the image */
+    }
+
+    /* Additional styles for #aboutMe h4, p, and h3 */
+    #aboutMe h4 {
+        font-size: 2vw; /* Adjusted smaller font size */
+    }
+
+    #aboutMe p,
+    #aboutMe h3 {
+        font-size: 1em; /* Adjusted smaller font size */
+        padding-left: auto;
+        padding-right: auto;
+        text-align: center; /* Center text */
+    }
+
+    /* Styles for #projects and its child elements */
+    #projects {
+        display: flex;
+        flex-direction: column;
+        width: 99vw;
+        height: 90vh;
+        box-sizing: border-box;
+        background: #4e4e4e29;
+        margin: auto;
+        padding-top: 70px;
+    }
+
+    #proj {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+
+    #project1,
+    #project2,
+    #project3 {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 2%;
+        padding: 60px 5px;
+    }
+
+    #project1 h4,
+    #project1 h5,
+    #project2 h4,
+    #project2 h5,
+    #project3 h4,
+    #project3 h5 {
+      margin-top: auto;
+      font-size: 0.7vw; /* Adjusted font size */
+   }
+}
+
+@media (max-width: 800px) {
+    .hero, #aboutMe,
+    #education, #projects,
+    #contact{
+        width: 100%;
+        /* margin: 0; */
+        flex-direction: column; /* Stack elements vertically */
+    }
+
+    .hero h1,
+    #aboutMe h4 {
+        font-size: 3em; /* Smaller font size */
+        padding: 0 20px; /* Add padding to prevent text from touching the edges */
+        text-align: center; /* Center the text */
+    }
+
+    .hero h2,
+    #aboutMe p,
+    #aboutMe h3 {
+        font-size: 2em; /* Smaller font size */
+        padding: 0 20px; /* Add padding to prevent text from touching the edges */
+        text-align: center; /* Center the text */
+    }
+
+    .hero,
+    #about-content {
+        background-position: top center;
+        background-size: auto;
+    }
+
+    #aboutMe img {
+        width: 70%; /* Adjust image size */
+        margin-bottom: 2%; /* Add space below the image */
+    }
+
+    /* Additional styles for #aboutMe h4, p, and h3 */
+    #aboutMe h4 {
+        font-size: 2em; /* Adjusted smaller font size */
+    }
+
+    #aboutMe p,
+    #aboutMe h3 {
+        font-size: 1em; /* Adjusted smaller font size */
+        padding-left: auto;
+        padding-right: auto;
+        text-align: center; /* Center text */
+    }
+
+    /* Styles for #projects and its child elements */
+    #projects {
+        display: flex;
+        flex-direction: column;
+        width: 99vw;
+        height: 90vh;
+        box-sizing: border-box;
+        background: #4e4e4e29;
+        margin: auto;
+        padding-top: 70px;
+    }
+
+    #proj {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+
+    #project1,
+    #project2,
+    #project3 {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 2%;
+        padding: 60px 5px;
+    }
+
+    #project1 h4,
+    #project1 h5,
+    #project2 h4,
+    #project2 h5,
+    #project3 h4,
+    #project3 h5 {
+      margin-top: auto;
+      font-size: 0.7vw; /* Adjusted font size */
+      flex-direction: column;
+      
+   }
+}
