@@ -126,9 +126,10 @@
 
     <!-- Project Section -->
     <section id="projects">
+      <h2>Check these projects out</h2>
       <div id="proj">
         <div id="project1">
-          <img src="https://placehold.co/400x250" alt="" />
+          <img src="./assets/STSApp.png" alt="" />
           <h4>Shop Tracker app</h4>
           <h5>Solo Project</h5>
           <p>
@@ -140,7 +141,7 @@
           </p>
         </div>
         <div id="project2">
-          <img src="https://placehold.co/400x250" alt="" />
+          <img src="./assets/MHTool.png" alt="" />
           <h4>Monster Lookup Tool</h4>
           <h5>Solo Project</h5>
           <p>
@@ -153,7 +154,7 @@
           </p>
         </div>
         <div id="project3">
-          <img src="https://placehold.co/400x250" alt="" />
+          <img src="./assets/PA_Logo.jpg" alt="" />
           <h4>PowerApps Application</h4>
           <h5>Side Project - Fiserv</h5>
           <p>
@@ -196,7 +197,7 @@
 
         <!-- Contact Form -->
         <div class="contact-form">
-          <form action="submit_form.php" method="post">
+          <form action="./mailer.php" method="post">
             <input type="text" name="name" placeholder="Your Name" required />
             <input
               type="email"
@@ -224,6 +225,7 @@
         </div>
       </div>
     </section>
+    <?php include './mailer.php'; ?>
     <script src="index.js"></script>
   </body>
 </html>

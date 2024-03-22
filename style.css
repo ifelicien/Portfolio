@@ -225,12 +225,22 @@ nav li:first-child {
   padding-top: 70px;
 }
 
+#projects h2{
+  font-size: 3vh;
+  padding-top: 15vh;
+  padding-left: 5vw;
+}
+
 #proj {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   height: auto;
+}
+
+#proj img {
+  height: 19vh;
 }
 
 #project1,
