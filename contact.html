@@ -64,52 +64,58 @@
       </ul>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero">
-      <div id="headerContainer">
-        <h1>Irwin Felicien</h1>
-        <h2>Software and Web Developer</h2>
-      </div>
-    </section>
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="container">
+        <h1>Contact Me</h1>
+        <p>
+          If you're interested in working together or have any questions, feel
+          free to reach out!
+        </p>
 
-    <!-- About Me Section -->
-    <section id="aboutMe">
-      <div class="grid-even-columns">
-        <div class="grid-auto-flow">
-        <div id="about-content">
-          <img src="https://placehold.co/400x700" alt="" />
-        </div>
-        <div id="row">
-          <h4>Hello there!</h4>
+        <!-- Personal Information -->
+        <div class="personal-info">
           <p>
-            Hello World! I’m the tech enthusiast who just tossed the graduation
-            cap into the air at Texas Southern University, armed with a Computer
-            Science degree as of May 2023. I’m not just any Software Engineer;
-            I’m the kind who injects a dash of pizzazz into every line of code.
-            Whether it’s HTML5, CSS, or diving into the depths of C# and .NET,
-            I’m all about turning the “what ifs” into “heck yes” with innovative
-            solutions.<br /><br />
+            <a href="mailto:felicienirwin@outlook.com"
+              >felicienirwin@outlook.com</a> or
 
-            Envision a local collision repair shop, once buried under mountains
-            of paperwork. That’s where I stepped in, wielding the power of
-            digital transformation to streamline their operations with a
-            custom-built web app. It’s more than just an upgrade; it’s a leap
-            into efficiency, storing customer and vehicle data with the click of
-            a button.<br /><br />
-
-            But my talents don’t stop at web development. I’ve ventured into the
-            realm of robotic mapping with the Powder-RENEW project and dabbled
-            in the art of machine learning, pitting algorithms against each
-            other in a battle royale of data.<br /><br />
-
-            I’m on a mission to blend professionalism with a sprinkle of fun,
-            all while pushing the envelope of technology.<br />
-            Let’s join forces and craft not just solutions, but experiences that
-            resonate and revolutionize.<br />
-            Are you ready to make some tech magic happen? Because I sure am!
+            <a href="mailto:felicien.irwin@gmail.com"
+              >felicien.irwin@gmail.com</a
+            >
           </p>
         </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form">
+          <form action="./mailer.php" method="post">
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input
+              type="email"
+              name="email"
+              placeholder="Your Email"
+              required
+            />
+            <textarea
+              name="message"
+              placeholder="Your Message"
+              required
+            ></textarea>
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+
+        <!-- Social Links -->
+        <div class="social-links">
+          <a href="http://www.linkedin.com/in/felicienirwin" target="_blank">
+            <img src="./assets/LI-Logo.png" alt="LinkedIn" />
+          </a>
+          <a href="http://github.com/ifelicien" target="_blank">
+            <img src="./assets/github-mark.svg" alt="GitHub" />
+          </a>
+        </div>
       </div>
     </section>
+    <?php include './mailer.php'; ?>
+    <script src="index.js"></script>
   </body>
 </html>
